@@ -1,0 +1,35 @@
+{
+  "name": "Web App Training",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.fontSize": 15,
+        "editor.tabSize": 2,
+        "editor.wordWrap": "on",
+        "editor.minimap.enabled": false,
+        "terminal.integrated.fontSize": 14,
+        "workbench.startupEditor": "readme",
+        "github.copilot.enable": {
+          "*": false
+        }
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  },
+  "forwardPorts": [3000, 5500],
+  "postCreateCommand": "npm init -y && npm install express cors better-sqlite3 && echo '' && echo '笨� 遐比ｿｮ迺ｰ蠅��貅門ｙ縺悟ｮ御ｺ�＠縺ｾ縺励◆��' && echo '刀 phase1縲徘hase4 繝輔か繝ｫ繝縺ｫ繝輔ぃ繧､繝ｫ繧剃ｽ懈�縺励※縺上□縺輔＞'",
+  "portsAttributes": {
+    "3000": {
+      "label": "API Server",
+      "onAutoForward": "notify"
+    },
+    "5500": {
+      "label": "Live Server",
+      "onAutoForward": "notify"
+    }
+  }
+}
